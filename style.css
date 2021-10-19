@@ -6,20 +6,61 @@
 /* ヘッダー */
 #header{
   width: 100%;
-  position: fixed;
   position: relative;
+  padding-bottom: 600px;
 }
 #header img{
   width: 100%;
   height: 400px;
   object-fit: cover;
   position: absolute;
-  /* top: -100px; */
 }
 #header .title{
+  margin: 0 auto;
   position: absolute;
   font-size: 3rem;
   top: 360px;
   left: 5%;
-  letter-spacing: 10px;
+  letter-spacing: 0.7rem;
+}
+/* 全体の調整 */
+.wrapper{
+  padding: 0 16px;
+}
+/* ポートフォリオ */
+.title{
+  margin-bottom: 50px;
+  font-size: 1.8rem;
+}
+#profile{
+  margin-bottom: 50px;
+}
+#portfolio{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+#portfolio img{
+  width: 48%;
+  object-fit: cover;
+}
+/* etc */
+#etc{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+#etc img{
+  width: 32%;
+  object-fit: cover;
+}
+/* フッター */
+#footer{
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background-color: gray;
+  color: white;
 }
