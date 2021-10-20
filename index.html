@@ -7,15 +7,15 @@
   <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
     integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
     crossorigin="anonymous"></script>
-
-
   <title>portfolio</title>
 </head>
 
 <body>
   <header id="header">
     <!-- 画像と文字 -->
-    <img src="img/illust/9.jpeg" alt="">
+    <div class="header-img">
+      <img src="img/illust/9.jpeg" alt="">
+    </div>
     <h1 class="name-title">Misa Matsuyama Portfolio</h1>
   </header>
   <main>
@@ -27,7 +27,7 @@
         <p>
           松山実紗と申します。<br />
           大阪教育大学教養学科芸術専攻美術コース卒業。<br />
-          デザイン・イラストが得意です。<br /> デザインはIllustrator・Photoshop・inDesign、 イラストは基本procreateを使い制作しています。<br />
+          デザイン・イラストが得意です。<br /> デザインはIllustrator・Photoshop・inDesign、<br /> イラストは基本procreateを使い制作しています。<br />
           プログラミング言語は主にRuby、 フレームワークは、Ruby on Railsを使用しています。
         </p>
       </div>
@@ -36,7 +36,18 @@
       <div class="title-line"></div>
       <div id="portfolio">
         <article>
-          <img src="img/drawours.jpeg" alt="">
+          <!-- ホバーの変化をつける -->
+          <section class="hover">
+            <div class="hover-img">
+              <a href="http://drawours.com">
+                <img src="img/drawours.jpeg" alt="">
+              </a>
+            </div>
+            <div class="hover-text">
+              <p class="text1">サイトを見る</p>
+            </div>
+          </section>
+
           <p>
             イラスト・絵画・立体・写真などの、制作をしている方用のSNSです。制作していない方も閲覧用として使用可能です。
             投稿内容にキャプション(作品タイトル・作品技法・支持体)を書く欄が設けられているので、展示会にきた時のように、相手の作品を鑑賞し、制作者も自分のイラストの魅力を伝えられる場にしたいと思っています。また、手軽に会話できるチャット機能を設けることで、制作者間での情報交換を行える場にしています。
@@ -49,7 +60,8 @@
 
         </article>
         <article>
-          <img src="img/nagano_cake.jpeg" alt="">
+          <div class="image"><img src="img/nagano_cake.jpeg" alt=""></div>
+
           <p>
             DMM受講期間に3人チームで架空のECサイト「Nagano Cake」を制作しました。
             ログイン機能/機能面だけでなくレイアウト面でも力を入れ、実際にいきたいと思えるような魅力的なサイトを目指しました。
@@ -66,9 +78,13 @@
       <!-- etc -->
       <h3 class="title">etc.....</h3>
       <div class="title-line"></div>
+      <div>
+        <a href="https://drive.google.com/file/d/1B-k7mIWAR3NvikYW3NbjNMbZNyMkiFEp/view?usp=sharing"
+          class="btn btn-orange"><span>イラストのポートフォリオを見る(pdf)</span></a>
+      </div>
       <div id="etc">
         <article>
-          <img src="img/exhibition/shinen.jpeg" alt="">
+          <div class="image"><img src="img/exhibition/shinen.jpeg" alt=""></div>
           <p>何度かギャラリーでイラストの展示経験があります。2人展を2回経験しており、展示のコンセプトやギャラリーとの打ち合わせも全て自分たちで行い、さまざまな学びがありました。<br />
             【過去の展示経験】<br />
             グループ展「色イロこども展」<br />
@@ -84,7 +100,7 @@
           </p>
         </article>
         <article>
-          <img src="img/illust/6.jpg" alt="">
+          <div class="image"><img src="img/illust/6.jpg" alt=""></div>
           <p>ペン画やデジタル画が好きです。イラストは自分の感情表現の一種であり、自分を形成する重要な存在です。<br />
             Twitter/Instagramを使って自分の絵を投稿しています。
             SUZURIを使ったグッズの物販/似顔絵制作も行なっています。
@@ -96,7 +112,8 @@
           </div>
         </article>
         <article>
-          <img src="img/design/concert2.jpeg" alt="">
+          <div class="image"><img src="img/design/concert2.jpeg" alt=""></div>
+
           <p>
             大学でデザインゼミに所属しており、Illustrator/Photoshop/Indesignを用いたデザインを制作できます。ここで学んだことを現在のプログラミングのレイアウト面でも活かしていきたいと感じています。デザインはインプットが重要なので、デザイン展に行ったり、日々街中の広告や雑誌に注目する様に癖付けています。
           </p>
@@ -122,7 +139,7 @@
     </nav>
 
   </footer>
-
 </body>
+
 
 </html>
