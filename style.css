@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 /* ヘッダー */
 #header{
@@ -27,17 +28,28 @@
 
 /* ポートフォリオ */
 .title{
-  margin-bottom: 50px;
-  text-align: right;
-  width: 50%;
+  text-align: center;
+  color: gray;
+}
+.title-line{
+  margin-bottom: 70px;
+  width: 55%;
   border-bottom: solid 1px gray;
 }
 p{
   font-size: 0.75rem;
+  /* text-align: center; */
+  line-height: 30px;
+  margin: 10px auto;
+  width: 90%;
+}
+.icon-br{
+  color: gray;
+  font-size: 1.2rem;
 }
 /* プロフィール */
 #profile{
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   padding: 0 16px;
 }
 /* ポートフォリオ */
@@ -45,7 +57,7 @@ p{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   padding: 0 16px;
 }
 #portfolio article{
@@ -53,15 +65,21 @@ p{
 }
 #portfolio img{
   width: 100%;
-  height: 250px;
+  height: 600px;
   object-fit: cover;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+}
+.center{
+  text-align: center;
 }
 /* 他 */
 #etc{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   padding: 0 16px;
 }
 #etc article{
@@ -69,7 +87,7 @@ p{
 }
 #etc img{
   width: 100%;
-  height: 250px;
+  height: 400px;
   object-fit: cover;
 }
 /* フッター */
@@ -78,5 +96,19 @@ p{
   padding: 20px;
   text-align: center;
   background-color: gray;
+  color: white;
+  font-size: 0.75rem;
+}
+#list{
+  display: flex;
+  width: 80px;
+  margin: 0 auto;
+}
+#list li{
+  margin: 10px;
+}
+
+.icons {
+  font-size: 30px;
   color: white;
 }
