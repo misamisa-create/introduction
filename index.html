@@ -7,22 +7,28 @@
   <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
     integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
     crossorigin="anonymous"></script>
+
   <title>portfolio</title>
 </head>
 
 <body>
+  <!-- jquery -->
+  <script src="jquery.min.js"></script>
+  <script src="index.js"></script>
+
   <header id="header">
     <!-- 画像と文字 -->
-    <div class="header-img">
-      <img src="img/illust/9.jpeg" alt="">
-    </div>
-    <h1 class="name-title">Misa Matsuyama Portfolio</h1>
+    <nav id="global-nav">
+      <img src="img/illust/11.jpeg" alt="" />
+      <h1 class="global-list name-title">Misa Matsuyama Portfolio</h1>
+    </nav>
+    <!-- ↑画像と文字 -->
   </header>
   <main>
     <div id="container" class="wrapper">
       <!-- プロフィール -->
-      <h3 class="title">profile</h3>
-      <div class="title-line"></div>
+      <p class="Text"><span class="Text-Span JS_ScrollAnimationItem">Misa Matsuyama</span></p>
+      <p class="Text"><span class="Text-Span JS_ScrollAnimationItem">profile</span></p>
       <div id="profile">
         <p>
           松山実紗と申します。<br />
@@ -32,8 +38,7 @@
         </p>
       </div>
       <!-- ポートフォリオ -->
-      <h3 class="title">portfolio</h3>
-      <div class="title-line"></div>
+      <p class="Text"><span class="Text-Span JS_ScrollAnimationItem">portfolio</span></p>
       <div id="portfolio">
         <article>
           <!-- ホバーの変化をつける -->
@@ -78,8 +83,7 @@
         </article>
       </div>
       <!-- etc -->
-      <h3 class="title">etc.....</h3>
-      <div class="title-line"></div>
+      <p class="Text"><span class="Text-Span JS_ScrollAnimationItem">etc.........</span></p>
       <div>
         <a href="https://drive.google.com/file/d/1B-k7mIWAR3NvikYW3NbjNMbZNyMkiFEp/view?usp=sharing"
           class="btn btn-orange"><span>イラストのポートフォリオを見る(pdf)</span></a>
